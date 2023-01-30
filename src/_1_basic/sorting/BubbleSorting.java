@@ -13,7 +13,7 @@ public class BubbleSorting {
         if (dataList.get(0) > dataList.get(1)) {
             Collections.swap(dataList, 0, 1);
         }
-        System.out.println(dataList);
+        System.out.println("sort1 = " + dataList);
     }
 
     public void bubbleSorting2() {
@@ -27,6 +27,8 @@ public class BubbleSorting {
                 Collections.swap(dataList, i, i + 1);
             }
         }
+
+        System.out.println("sort2 = " + dataList);
     }
 
     public ArrayList<Integer> sort(ArrayList<Integer> dataList) {
@@ -53,9 +55,15 @@ public class BubbleSorting {
             dataList.add((int)(Math.random() * 100));
         }
 
-        BubbleSorting bubbleSorting = new BubbleSorting();
-        ArrayList<Integer> integers = bubbleSorting.sort(dataList);
-        System.out.println("integers = " + integers);
+        BubbleSorting bubbleSorting1 = new BubbleSorting();
+        bubbleSorting1.bubbleSorting1();
+
+        BubbleSorting bubbleSorting2 = new BubbleSorting();
+        bubbleSorting2.bubbleSorting2();
+//
+//        BubbleSorting bubbleSorting = new BubbleSorting();
+//        ArrayList<Integer> sort3 = bubbleSorting.sort(dataList);
+//        System.out.println("sort3 = " + sort3);
     }
 
 }
