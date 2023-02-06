@@ -50,8 +50,6 @@ public class Main {
                 check[i] = 0;
             }
         }
-
-
     }
 
     static void cal() {
@@ -133,4 +131,3 @@ public class Main {
         }
     }
 }
-
