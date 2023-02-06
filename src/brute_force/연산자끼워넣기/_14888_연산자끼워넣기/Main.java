@@ -1,4 +1,4 @@
-package brute_force._14888_연산자끼워넣기;
+package brute_force.연산자끼워넣기._14888_연산자끼워넣기;
 
 import java.io.*;
 import java.util.StringTokenizer;
